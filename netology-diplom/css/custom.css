@@ -816,34 +816,30 @@
 
 /*Modal*/
 
-.modal-opacity::before {
+.modal-opacity {
   content: "";
-  background-color: #000000;
+  background-color: #00000099;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.6;
   z-index: 7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal {
-  position: fixed;
-  z-index: 8;
+  position: relative;
   background-color: #fff;
-  top: 235px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 50px;
   padding-bottom: 50px;
   max-width: 390px;
 }
 
 ._hidden {
-  visibility: hidden;
+  visibility: visible;
 }
 
 .modal-button{
@@ -880,7 +876,6 @@
 
 .modal-select-options {
   color: #000;
-  opacity: 0.54;
   background-color: #f4f7f6;
   border: none;
   padding: 20px;
@@ -888,23 +883,17 @@
   -moz-appearance: none;
   width: 100%;
   font-family: inherit;
-}
-
-.modal-select-icon {
-  width: 10px;
-  height: 16px;
-  position: absolute;
-  top: 47px;
-  right: 10px;
+  background-image: url("../source/svg/form-arrows.svg");
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: right 10px center;
 }
 
 .radio-group-text::before {
   content: "";
   display: inline-block;
-
   width: 20px;
   height: 20px;
-
   background-image: url("../source/svg/form-empty-circle.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -940,7 +929,6 @@
 
 .modal-textarea {
   color: #000;
-  opacity: 0.54;
   height: 130px;
   box-sizing: border-box;
   background-color: #f4f7f6;
