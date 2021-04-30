@@ -1,5 +1,14 @@
 /*Model*/
 
+@media (max-width: 1200px) {
+  .container-main {
+    max-width: 100%;
+  }
+  .products-container {
+    max-width: 100%;
+  }
+}
+
 @media (min-width: 1200px) {
   .mobile-menu {
     display: none;
@@ -217,7 +226,15 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 767px) {
+@media (max-width: 767px) {
+  .search-group {
+    flex: 1;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
   .modal-close {
     right: 0;
     padding: 0;
@@ -515,29 +532,3 @@
   }
 }
 
-@media (min-width: 576px) {
-  .container-main {
-    max-width: 540px;
-  }
-  .products-container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container-main {
-    max-width: 720px;
-  }
-  .products-container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container-main {
-    max-width: 1200px;
-  }
-  .products-container {
-    max-width: 1200px;
-  }
-}
