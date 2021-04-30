@@ -839,7 +839,7 @@
 }
 
 ._hidden {
-  visibility: visible;
+  visibility: hidden;
 }
 
 .modal-button{
